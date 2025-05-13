@@ -1,7 +1,7 @@
 import axios from "axios";
 
 const api = axios.create({
-  baseURL: "https://stockdividend-webscraper-app-backend.onrender.com",
+  baseURL: "https://stockdividend-webscraper-app-backend.onrender.com/api",
 });
 
 export const getStocksDeatil = () => api.get(`/stocks`);
