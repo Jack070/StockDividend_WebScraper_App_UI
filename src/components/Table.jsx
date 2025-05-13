@@ -7,7 +7,7 @@ function Table() {
     async function fetchMyAPI() {
       let response = await api.getStocksDeatil();
       if (response) {
-        setStockData(response.data);
+        setStockData(response.data.data);
       }
     }
     fetchMyAPI();
